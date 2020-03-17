@@ -1,0 +1,8 @@
+.dialogue-list {
+    &__item {
+        border-bottom: 1px solid #dedede;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
