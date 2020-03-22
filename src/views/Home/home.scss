@@ -1,0 +1,21 @@
+.home-page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__logo {
+        width: 200px;
+        height: 150px;
+    }
+    &__logo-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    $nav: '.navigation';
+
+    &__link {
+        width: calc(100% / 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        text-decoration: none;
+        transition: all .3s;
+        background-color: #3a3a3a;
+        border-right: 1px solid #929292;
+        &:last-child {
+            border: none;
+        }
+        &--active {
+            background-color: white;
+            border-right-color: white;
+
+            #{$nav}__icon {
+                fill: black;
+            }
+        }
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+        fill: white;
+    }
+}

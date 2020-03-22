@@ -1,6 +1,6 @@
 .header {
     padding: 15px;
-    background-color: silver;
+    background-color: #3a3a3a;
     display: flex;
     align-items: center;
     position: relative;
@@ -25,12 +25,13 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        text-decoration: none;
     }
     &__logo-user {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background-color: red;
+        background-color: #fa5505;
         display: flex;
         justify-content: center;
         align-items: center;

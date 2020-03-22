@@ -1,6 +1,7 @@
 .user-dialogue {
     display: flex;
     padding: 10px;
+    text-decoration: none;
     &__logo {
         width: 60px;
         height: 60px;
@@ -16,16 +17,17 @@
     }
     &__status {
         position: absolute;
-        bottom: 10px;
-        left: 5px;
+        bottom: 1px;
+        left: 7px;
         width: 10px;
         height: 10px;
-        background-color: white;
+        background-color: #15bd15;
         border-radius: 50%;
     }
     &__name {
         font-weight: 600;
         font-size: 20px;
         margin-bottom: 10px;
+        color: black;
     }
 }

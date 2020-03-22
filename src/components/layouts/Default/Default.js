@@ -1,15 +1,17 @@
 import React from 'react'
 import './default.scss';
+
 import Header from '../../Header/Header';
-import DialogueList from '../../DialogueList/DialogueList';
+import Navigation from '../../Navigation/Navigation';
+import PageRouter from '../../../router/PageRouter';
 
 const Default = () => (
     <div className="default-layout">
         <Header />
         <div className="default-layout__wrapper">
-            <DialogueList />
+            <PageRouter />
         </div>
-        <div className="sidebar"></div>
+        <Navigation />
     </div>
 );
 

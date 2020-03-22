@@ -1,8 +1,9 @@
 import React from 'react'
 import './user-dialogue.scss';
+import { Link } from 'react-router-dom';
 
 const UserDialogue = () => (
-    <div className="user-dialogue">
+    <Link to={`/dialog/1`} className="user-dialogue">
         <div className="user-dialogue__logo">
             <img 
                 src="https://picsum.photos/536/354" 
@@ -11,7 +12,7 @@ const UserDialogue = () => (
             <span className="user-dialogue__status"></span>
         </div>
         <h2 className="user-dialogue__name">Alex</h2>
-    </div>
+    </Link>
 );
 
 export default UserDialogue;
