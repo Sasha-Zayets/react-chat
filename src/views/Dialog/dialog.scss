@@ -1,0 +1,7 @@
+.dialog {
+    height: 100%;
+    overflow-y: scroll;
+    &__item {
+        margin-bottom: 10px;
+    }
+}

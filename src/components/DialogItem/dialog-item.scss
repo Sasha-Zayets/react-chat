@@ -1,0 +1,62 @@
+.dialog-item {
+    display: flex;
+    flex-wrap: wrap;
+    &__logo {
+        margin-right: 10px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__logo-item {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+    }
+    &__messages {
+        width: calc(100% - 75px);
+    }
+    &__message {
+        font-size: 13px;
+        line-height: 14px;
+        padding: 7px;
+        background-color: #3a3a3a;
+        color: white;
+        text-align: justify;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    &__date {
+        width: 100%;
+        padding-left: 35px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    $dialog: '.dialog-item';
+    &--reverse {
+        justify-content: flex-end;
+        #{$dialog} {
+            &__logo {
+                display: none;
+            }
+            &__message {
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                background-color: #fa5506;
+            }
+            &__date {
+                padding-left: 0;
+                padding-right: 15px;
+                text-align: right;
+            }
+        }
+    }
+}
